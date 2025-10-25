@@ -21,11 +21,11 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-// pastikan ini ada di file routes/alumni.go & routes/pekerjaan.go
 func RegisterRoutes(app *fiber.App, db *mongo.Database) {
     AuthRoutes(app, db)
     UserRoutes(app, db)
     AlumniRoutes(app, db)
     PekerjaanRoutes(app, db)
+    FileRoute(app, db)
 }
 
